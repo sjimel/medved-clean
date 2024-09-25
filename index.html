@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clean That Smile!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Clean That Smile!</h1>
+
+    <div id="game-container">
+        <div id="tooth-container">
+            <img id="tooth" src="main.jpg" alt="Tooth">
+            <p>Click to clean the tooth!</p>
+        </div>
+
+        <p id="points">Toothpaste: 0</p>
+        <p id="plaque-status">Plaque: 100</p>
+
+        <div id="upgrades">
+            <h2>Upgrades</h2>
+            <button id="upgrade1" onclick="buyUpgrade(1)">Manual Toothbrush (Cost: 10 Toothpaste) [+1 per click]</button><br>
+            <button id="upgrade2" onclick="buyUpgrade(2)">Electric Toothbrush (Cost: 50 Toothpaste) [+1 per second]</button><br>
+            <button id="upgrade3" onclick="buyUpgrade(3)">Dental Floss (Cost: 100 Toothpaste) [Removes extra plaque]</button><br>
+            <button id="upgrade4" onclick="buyUpgrade(4)">Mouthwash (Cost: 200 Toothpaste) [Double plaque removal for 10s]</button><br>
+            <button id="upgrade5" onclick="buyUpgrade(5)">Teeth Whitening Strips (Cost: 500 Toothpaste) [20% increase in efficiency]</button><br>
+        </div>
+
+        <button id="prestige-btn" onclick="prestige()" style="display:none;">Go to Dental Clinic (Prestige)</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
